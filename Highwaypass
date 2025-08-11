@@ -1,0 +1,27 @@
+package Assessment;
+import java.util.Scanner;
+public class Highwaypass {
+	public static void main(String[] args) {
+		        Scanner sc = new Scanner(System.in);
+		        int x = sc.nextInt();
+		        int y = sc.nextInt();
+		        Float s = sc.nextFloat();
+		        Float r = sc.nextFloat();
+		        Float l = sc.nextFloat(); 
+		        if (s > r && (2 * s) < r) {
+		            System.out.println("Invalid Input");
+		        }
+		        Float totalCost = (x * s) + (y * r);
+		        if (totalCost > l) {
+		            System.out.println("Monthly Pass");
+		        } else {
+		            System.out.println("Solo Trail+ Roundabout Ride");
+		        }
+		    }
+}
+
+		
+		
+	
+
+
